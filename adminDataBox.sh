@@ -36,7 +36,7 @@ echo '</databox>' >&3
 #Load data box ..................
 
 
-$JRT_HOME/bin/jrtstart -node 'AdminMessage' -i $INSTANCE -machine $HOSTNAME -s ac lcs-loader -filein $File -threads 10 -fileout /acm/ALGO_TOP/load_logs_output/adminBox.xml -maxerror 5
+$JRT_HOME/bin/jrtstar -node 'AdminMessage' -i $INSTANCE -machine $HOSTNAME -s ac lcs-loader -filein $File -threads 10 -fileout /acm/ALGO_TOP/load_logs_output/adminBox.xml -maxerror 5
 err=$?
 if [ $err -eq 0 ] ; then
     exit 0
